@@ -31,7 +31,24 @@
     console.log(firstName);
     console.log(lastName);
   }
+
   printName('Steve', 'Jobs');
   printName('Elice');
   printName('Anna', undefined);
+
+  // Default parameter
+  function printMessage(message: string = 'default message'){
+    console.log(message);
+  }
+  printMessage();
+
+  // Rest parameter
+  function addNumbers(...numbers: number[]): number {
+    return [...numbers].reduce((acc, curr) => acc += curr, 0)
+  }
+
+  console.log(addNumbers(1,2));
+  console.log(addNumbers(1,2,3,4));
+  console.log(addNumbers(1,2,3,4,5,0));
+  
 }
