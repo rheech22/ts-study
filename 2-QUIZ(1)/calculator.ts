@@ -19,6 +19,7 @@
       case 'remainder':
         return a % b;
       default:
+        // 모든 경우에 해당하지 않으면 에러 던짐
         throw new Error('unknown command');
     }
   }

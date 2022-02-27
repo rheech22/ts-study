@@ -1,6 +1,33 @@
 /**
  * Let's make a game 🕹
  */
+
+const position = {
+  x: 0,
+  y: 0
+}
+
+type Command = 'up' | 'down' | 'left' | 'right';
+
+function move(command: Command){
+  switch (command){
+    case 'up':
+      position.y += 1;
+      return
+    case 'down':
+      position.y -= 1;
+      return
+    case 'left':
+      position.x -= 1;
+      return
+    case 'right':
+      position.x += 1;
+      return
+    default:
+      throw new Error('Not Valid Command !')
+  }
+}
+
 console.log(position); // { x: 0, y: 0}
 move('up');
 console.log(position); // { x: 0, y: 1}
