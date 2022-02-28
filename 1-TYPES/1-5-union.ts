@@ -50,10 +50,13 @@
   // in 활용 사례 ❌ 권장하지 않음 => descriminated union 활용
 
   function printLoginState(state: LoginState): void{
-    if('response' in state) {
-      console.log(state.response.body);
-    } else {
-      console.log(state.reason);
-    }
+    // if('response' in state) {
+    //   console.log(state.response.body);
+    // } else {
+    //   console.log(state.reason);
+    // }
+    console.log(typeof state)
   }
+
+  printLoginState({response: {body: 'good'}});
 }
