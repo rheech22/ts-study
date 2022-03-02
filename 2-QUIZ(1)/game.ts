@@ -24,7 +24,8 @@ function move(command: Command){
       position.x += 1;
       return
     default:
-      throw new Error('Not Valid Command !')
+      const invalid: never = command; 
+      throw new Error(`Not Valid Command: ${invalid}`);
   }
 }
 

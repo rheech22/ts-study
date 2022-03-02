@@ -11,6 +11,8 @@
 
   // abstract 클래스로는 인스턴스를 만들 수 없음
   // 부모 클래스로서 필요한 것들을 정의해놓음
+  // 구현 목적에 따라 달라져야 하는 부분은 abstract 메서드로 정의할 수 있음
+  // 자식 클래스에서 반드시 abstract 메서드에 대한 내용이 구현되어야 함
   abstract class CoffeeMachine implements CoffeeMaker {
     private static BEANS_GRAM_PER_SHOT: number = 7;
     private coffeeBeans: number = 0;
