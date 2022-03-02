@@ -45,7 +45,7 @@
     // "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
     // "declarationMap": true,                           /* Create sourcemaps for d.ts files. */
     // "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
-    // "sourceMap": true,                                /* 디버깅할 때 유용하게 사용 */
+    // "sourceMap": true,                                /* 디버깅할 때 유용하게 사용, 설정하게 되면 컴파일 시 .map 확장자 파일이 생성되고, 브라우저 상에서 디버깅 할때 ts파일에 접근할 수 있음 */
     // "outFile": "./",                                  /* 하나의 파일로 컴파일 */
     "outDir": "./build",                                   /* Specify an output folder for all emitted files. */
     // "removeComments": true,                           /* 주석 제거 */
